@@ -1,24 +1,24 @@
-var image = ["./assets/images/1.jpg",
-                "./assets/images/2.jpg" ,
-                "./assets/images/3.jpg"
+var image = ["1" , "2" , "3"
             ]
 var container = document.querySelector('.container');
-var index =0
+var index =1
 
 function forward(){
     index++;
-    if(index > image.length-1){
-        index=0;
+    if(index > image.length){
+        index=1;
     }
-    container.style.backgroundImage = `url(${image[index]})`
+    container.style.backgroundImage = `url(./assets/images/${index}.jpg)`
+    document.querySelector('.body').style.backgroundImage = `url(./assets/images/fundo${index}.jpg)`
     
 
 }
 function backward(){
     index--;
-    if(index < 0){
-        index= image.length - 1;
+    if(index < 1){
+        index= 3;
     }
-    container.style.backgroundImage = `url(${image[index]})`
+    container.style.backgroundImage = `url(./assets/images/${index}.jpg)`
+    document.querySelector('.body').style.backgroundImage = `url(./assets/images/fundo${index}.jpg)`
       
 }

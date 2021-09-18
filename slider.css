@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url(./assets/images/manga.jpg);
+.body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/images/fundo1.jpg);
+    background-size: cover;
+    background-position: center  ;
+    
 }
 
 .main-container{
